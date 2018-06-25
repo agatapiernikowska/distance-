@@ -36,6 +36,17 @@ var addPoint=function(){
 
 addButton.onclick=addPoint;
 
+// Wyznaczanie odległości w km
 
-
+function calcDistance(lat1,lon1,lat2,lon2) {
+  var dLat = Math.pow((lat2-lat1),2);
+  var dLon = (lon2-lon1);
+  var x = Math.cos((lat2*Math.PI)/180)*dLon;
+  var a = Math.pow(x,2);
+  var f = (40075.704/360);
+  var j = dLat+a;
+  var h = Math.sqrt(j);
+  var w = h*f;
+  return w;
+}
 
