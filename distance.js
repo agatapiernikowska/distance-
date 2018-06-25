@@ -14,8 +14,12 @@ var createNewPointElement=function(){
   inputLong.type="number";
   inputLat.placeholder="54.479732";
   inputLong.placeholder="18.566830";
-  inputLat.step="0.000001"
-  inputLong.step="0.000001"
+  inputLat.step="0.000001";
+  inputLong.step="0.000001";
+  inputLat.min="-90";
+  inputLat.max="90";
+  inputLong.min="-90";
+  inputLong.max="90";
   listItem.appendChild(labelLat);
   listItem.appendChild(inputLat);
   listItem.appendChild(labelLong);
