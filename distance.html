@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="distance.css" rel="stylesheet" type="text/css">
+    <title>Distance</title>
 </head>
 <body>
+<h1>Oblicz odległość między punktami</h1>
+<form>
+    <h3>Wpisz współrzędne puntku początkowego</h3>
+    <label for="startLat">Szerokość geograficzna</label>
+    <input type="number" id="startLat" placeholder="np.54.479732" required="required">
+    <label for="startLong">Długość geograficzna</label>
+    <input type="number" id="startLong" placeholder="np.18.566830" required="required"> <br>
+
+    <h3>Wpisz współrzędne punktu końcowego</h3>
+    <label for="stopLat">Szerokość geograficzna</label>
+    <input type="number" id="stopLat" placeholder="np.54.479732" required="required">
+    <label for="stopLong">Długość geograficzna</label>
+    <input type="number" id="stopLong" placeholder="np.18.566830" required="required"><br>
+<input type="button" class="btn" value="Wyślij">
+
+</form>
 
 </body>
 </html>
