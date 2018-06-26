@@ -38,10 +38,10 @@ addButton.onclick=addPoint;
 
 // Wyznaczanie odległości w km
 
-function calcDistance(lat1,lon1,lat2,lon2) {
-  var dLat = Math.pow((lat2-lat1),2);
-  var dLon = (lon2-lon1);
-  var x = Math.cos((lat2*Math.PI)/180)*dLon;
+function calcDistance(startLat,startLong,inputLat,inputLong) {
+  var dLat = Math.pow((inputLat-startLat),2);
+  var dLon = (inputLong-startLong);
+  var x = Math.cos((inputLat*Math.PI)/180)*dLon;
   var a = Math.pow(x,2);
   var f = (40075.704/360);
   var j = dLat+a;
@@ -50,3 +50,19 @@ function calcDistance(lat1,lon1,lat2,lon2) {
   return w;
 }
 
+var addButton2=document.getElementsByClassName("btn")[0];
+
+// var newScore=document.getElementById("wyniki");
+
+// var createNewScoreElement=function(){
+//   var listScore=document.createElement("li");
+//   return listScore;
+// }
+//
+// var addScore=function(){
+//   var listScore=createNewScoreElement(addButton2);
+//   newScore.appendChild(listScore);
+//   var calc = calcDistance();
+// }
+
+addButton2.onclick=calcDistance();
