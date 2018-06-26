@@ -19,38 +19,30 @@ p {
 }
 
 input {
-    padding: 5px;
+    padding: 7px;
     margin: 10px;
-}
-
-.btn {
-    margin-top: 30px;
-    padding: 10px 50px 10px;
-    background-color: grey;
-    color: white;
-    cursor: pointer;
-    font-weight: bolder;
-}
-
-.btn:hover {
-    background-color: darkgray;
-}
-
-.button {
-    margin-top: 30px;
-    padding: 10px 30px 10px;
-    background-color: grey;
-    color: white;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: darkgrey;
+    background-color: lavender;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
 }
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 50px 10px;
+    background-color: grey;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+
 
 
