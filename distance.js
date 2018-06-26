@@ -12,8 +12,8 @@ var createNewPointElement=function(){
 
   inputLat.type="number";
   inputLong.type="number";
-  inputLat.placeholder="54.479732";
-  inputLong.placeholder="18.566830";
+  inputLat.placeholder="np.54.479732";
+  inputLong.placeholder="np.18.566830";
   inputLat.step="0.000001";
   inputLong.step="0.000001";
   inputLat.min="-90";
