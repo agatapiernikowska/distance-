@@ -7,10 +7,10 @@
 </head>
 <body>
 <h1>Oblicz odległość między punktami</h1>
-<form>
+<form name="Form">
     <h3>Wpisz współrzędne puntku początkowego</h3>
     <label for="startLat">Szerokość geograficzna</label>
-    <input type="number" id="startLat" placeholder="np.54.479732"  step="0.000001" min="-90" max="90">
+    <input type="number" id="startLat" placeholder="np.54.479732" step="0.000001" min="-90" max="90">
     <label for="startLong">Długość geograficzna</label>
     <input type="number" id="startLong" placeholder="np.18.566830" step="0.000001" min="-90" max="90"> <br>
 
@@ -19,9 +19,10 @@
     <input id="new-point" type="button" class="button" value="DODAJ KOLEJNY PUNKT">
     <ul id="new-position">
     </ul>
-<input type="button" class="btn" value="WYŚLIJ">
+    <input type="button" class="btn" value="WYŚLIJ" onclick="addScore()">
 </form>
 
+<h3>Odległość między poszczególnymi punktami</h3>
 <ul id="wyniki">
 </ul>
 
